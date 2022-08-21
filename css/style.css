@@ -55,7 +55,7 @@ li {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1920px;
   margin: auto;
   padding: 2% 0 0;
 }
@@ -67,7 +67,7 @@ li {
 .btn-white-style {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  padding: 1.4rem 3.4rem;
+  padding: 1.2rem 3rem;
   border-radius: 0.5rem;
   font-size: 1.6rem;
   font-weight: 700;
@@ -95,7 +95,7 @@ li {
 .btn-color-style {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  padding: 1.6rem 3.4rem;
+  padding: 1.4rem 3rem;
   border-radius: 0.5rem;
   font-size: 1.6rem;
   font-weight: 700;
@@ -112,7 +112,7 @@ li {
 
 /* p paragraph */
 .para-style {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: var(--light-gray);
   margin-bottom: 3.2rem;
   line-height: 3rem;
@@ -122,20 +122,20 @@ li {
 /* h2 style */
 .h2-style {
   color: var(--dark-gray);
-  font-size: 4.8rem;
+  font-size: 4.2rem;
   margin-bottom: 2rem;
 }
 
 /* h3 style */
 .h3-style {
-  font-size: 3.4rem;
+  font-size: 3rem;
   color: var(--dark-gray);
   margin-bottom: 2rem;
 }
 
 /* h4 style */
 .h4-style {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   color: var(--dark-gray);
   margin-bottom: 2rem;
 }
@@ -156,8 +156,18 @@ li {
 
 /* navbar logo */
 .navbar .logo {
-  width: 12rem;
+  width: 10rem;
   cursor: pointer;
+}
+
+/* navbar hamburger */
+.hamburger {
+  display: none;
+}
+
+.hamburger .menu-icon {
+  color: var(--black);
+  font-size: 2.2rem;
 }
 
 /* nav-menu */
@@ -170,7 +180,7 @@ li {
 .nav-link {
   display: inline-block;
   margin-left: 3rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: var(--light-gray);
   transition: all 0.1s ease-in-out;
@@ -195,7 +205,7 @@ li {
 
 /*** showcase content ***/
 .showcase-content {
-  padding: 15rem 0;
+  padding: 15rem 0 8rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -208,7 +218,7 @@ li {
 
 .tag-line h1 {
   color: var(--black);
-  font-size: 6rem;
+  font-size: 5rem;
   margin-bottom: 2rem;
 }
 
@@ -240,6 +250,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 5rem;
 }
 
 .pro-one {
@@ -248,7 +259,7 @@ li {
 
 /* common style img */
 .pro-img {
-  width: 45%;
+  width: 50%;
 }
 
 .pro-img img {
@@ -271,7 +282,7 @@ li {
 }
 
 .pro-btn {
-  padding: 1.6rem 4rem;
+  padding: 1.2rem 3rem;
 }
 /********** Section 1 Company Pros End **********/
 
@@ -309,10 +320,11 @@ li {
 .common-feature {
   width: 28%;
   margin-bottom: 3rem;
+  align-self: normal;
 }
 
 .common-feature img {
-  width: 5rem;
+  width: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -350,20 +362,22 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 2rem;
 }
 
 /* common styling for pack */
 .pricing-pack-wrapper .common-pack {
-  width: 30%;
+  flex: 1;
   background-color: var(--white);
   border-radius: 0.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  align-self: normal;
 }
 
 /* pack name */
 .pack-name {
   text-align: left;
-  padding: 2.2rem;
+  padding: 2rem;
   border-radius: 0.5rem;
 }
 
@@ -373,7 +387,7 @@ li {
 
 .pack-name .common-p {
   margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -389,26 +403,26 @@ li {
 
 /* benifits ul*/
 .benifits {
-  padding: 2.2rem;
+  padding: 2rem;
   text-align: left;
 }
 
 /* benifits li */
 .benifits li {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: var(--dark-gray);
-  padding: 1.6rem 0;
+  padding: 1.4rem 0;
 }
 
 /* li last child for MB */
 .benifits li:last-child {
-  margin-bottom: 2rem;
+  margin-bottom: 2.6rem;
 }
 
 /* benifits check mark */
 .benifits .check {
-  width: 16px;
+  width: 1.4rem;
   margin-right: 0.8rem;
   vertical-align: center;
 }
@@ -421,17 +435,18 @@ li {
 /* pack price h3 for MB */
 .pack-price .h3-style {
   margin-bottom: 0;
+  font-size: 2.8rem;
 }
 
 /* cancle text */
 .cancel {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 /* plan button */
 .plan-btn {
-  margin-bottom: 2.6rem;
+  margin-bottom: 4rem;
 }
 
 .plan-btn:hover {
@@ -471,13 +486,14 @@ li {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /* common style */
 .common-test {
-  width: 48%;
+  width: 49%;
   background-color: var(--white);
-  margin-bottom: 4%;
+  margin-bottom: 2rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 0.5rem;
   padding: 2rem;
@@ -486,9 +502,9 @@ li {
 /* common test para */
 .common-p-test {
   text-align: left;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--dark-gray);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   line-height: 2.8rem;
   letter-spacing: 0.3px;
   font-weight: 500;
@@ -502,7 +518,7 @@ li {
 
 /* customer img */
 .customer-pic img {
-  width: 60px;
+  width: 50px;
   margin-right: 1rem;
 }
 
@@ -512,13 +528,13 @@ li {
 }
 
 .customer-deatil .name {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .customer-deatil .desg {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 /********** Section 4 Testimonial End **********/
 
@@ -557,7 +573,7 @@ li {
 .btn-register {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  padding: 1.6rem 3.4rem;
+  padding: 1.2rem 3rem;
   border-radius: 0.5rem;
   font-size: 1.6rem;
   font-weight: 700;
@@ -587,12 +603,13 @@ li {
 }
 
 .company-foot img {
-  width: 10rem;
+  width: 9rem;
   margin-bottom: 2rem;
 }
 
 .company-foot .foot-p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
   line-height: 2.5rem;
   color: var(--light-gray);
 }
@@ -605,13 +622,14 @@ li {
 
 .foot-menu li {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
   color: var(--light-gray);
 }
 
 /* social img */
 .social img {
-  width: 3.5rem;
+  width: 3rem;
   margin: 0 0.5rem;
   transition: all 0.3s ease-in-out;
 }
@@ -620,3 +638,666 @@ li {
   transform: translateY(-0.2rem);
 }
 /********** Footer End**********/
+
+/********** Media query for mobile**********/
+@media only screen and (max-width: 480px) {
+  /***** common style Start *****/
+
+  /* btn white */
+  .btn-white-style {
+    font-size: 1.3rem;
+    padding: 1.2rem 2.8rem;
+    font-weight: 600;
+  }
+
+  /* btn color */
+  .btn-color-style {
+    font-size: 1.3rem;
+    padding: 1.2rem 2.8rem;
+    font-weight: 600;
+  }
+
+  /* .para-style */
+  .para-style {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+
+  /* h2 style */
+  .h2-style {
+    font-size: 2.6rem;
+  }
+
+  /* h3 style */
+  .h3-style {
+    font-size: 2.4rem;
+  }
+
+  /* h4 style */
+  .h4-style {
+    font-size: 1.8rem;
+  }
+  /***** common style End *****/
+
+  /***** showcase *****/
+  .showcase {
+    padding: 0 2%;
+  }
+
+  /* navbar logo */
+  .navbar .logo {
+    width: 8rem;
+  }
+
+  /* navbar hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* nav menu */
+  .nav-menu {
+    display: none;
+  }
+
+  /* showcase content */
+  .showcase-content {
+    padding: 6rem 0 8rem;
+    flex-direction: column;
+  }
+
+  /* tagline */
+  .tag-line {
+    width: 100%;
+    order: 2;
+    text-align: center;
+  }
+
+  .tag-line h1 {
+    font-size: 3.2rem;
+    text-align: left;
+  }
+
+  .tagline-p {
+    width: 100%;
+    text-align: left;
+  }
+
+  /* showcase image container */
+  .show-image {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /***** section 1 *****/
+  .company-pros {
+    padding: 4rem 2%;
+    margin-bottom: 6rem;
+  }
+
+  /* single box style */
+  .pro-one,
+  .pro-two {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+
+  .pro-one {
+    margin-bottom: 2rem;
+  }
+
+  /* image container same for both */
+  .pro-img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* comman text container for both */
+  .pro-content {
+    width: 100%;
+    order: 2;
+  }
+
+  .pro1-p,
+  .pro2-p {
+    width: 100%;
+  }
+
+  .pro-btn {
+    font-size: 1.3rem;
+    padding: 1.2rem 2.6rem;
+    font-weight: 600;
+  }
+
+  /***** section 2 *****/
+  .company-services {
+    padding: 2rem 2%;
+    margin-bottom: 5rem;
+  }
+
+  /* service heading */
+  .service-heading {
+    flex-direction: column;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  /* service heading para */
+  .service-h2 {
+    width: 100%;
+  }
+
+  .service-p {
+    width: 100%;
+  }
+
+  /* service features */
+  .service-features {
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+  }
+
+  .common-feature {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 0;
+    padding: 2rem 1rem 1rem;
+    border-radius: 0.5rem;
+  }
+
+  /***** section 3 *****/
+  .company-pricing {
+    padding: 5rem 2%;
+  }
+
+  .pricing-pack-wrapper {
+    flex-direction: column;
+  }
+
+  /***** section 4 *****/
+  .company-testimonial {
+    padding: 5rem 2%;
+  }
+
+  /* testimonial header */
+  .testimonial-header {
+    width: 100%;
+  }
+
+  /* testimonaial wrapper */
+  .testimonial-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* common style */
+  .common-test {
+    width: 100%;
+    margin-bottom: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  /***** section 5 *****/
+  .register {
+    padding: 5rem 2%;
+    text-align: center;
+  }
+
+  /* register wrapper */
+  .register-content {
+    flex-direction: column;
+  }
+
+  /* text wrapper */
+  .register-content .text-content {
+    width: 100%;
+  }
+
+  /* para */
+  .register-p {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .btn-register {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.2rem 2.8rem;
+  }
+
+  /***** Footer *****/
+  .foot {
+    padding: 5rem 2%;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  /* company foot */
+  .common-foot {
+    width: 46%;
+    align-self: normal;
+  }
+
+  /*foot  logo */
+  .company-foot img {
+    width: 8rem;
+  }
+
+  .social {
+    width: 100%;
+  }
+
+  .social img {
+    margin-right: 2rem;
+  }
+}
+
+/********** Media query for bigger screeen mobile**********/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /***** common style Start *****/
+  /* btn white */
+  .btn-white-style {
+    font-size: 1.3rem;
+    padding: 1.2rem 2.8rem;
+    font-weight: 600;
+  }
+
+  /* btn color */
+  .btn-color-style {
+    font-size: 1.3rem;
+    padding: 1.2rem 2.8rem;
+    font-weight: 600;
+  }
+
+  /* .para-style */
+  .para-style {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+
+  /* h2 style */
+  .h2-style {
+    font-size: 2.8rem;
+  }
+
+  /* h3 style */
+  .h3-style {
+    font-size: 2.6rem;
+  }
+
+  /* h4 style */
+  .h4-style {
+    font-size: 1.8rem;
+  }
+  /***** common style End *****/
+
+  /********** ShowCase **********/
+  .showcase {
+    padding: 0 2%;
+    margin-bottom: 5rem;
+  }
+
+  /* nav logo */
+  .navbar .logo {
+    width: 9rem;
+  }
+
+  /* hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* navmenu */
+  .nav-menu {
+    display: none;
+  }
+
+  /* showcase content */
+  .showcase-content {
+    padding: 6rem 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* tagline */
+  .tag-line {
+    width: 100%;
+    order: 2;
+  }
+
+  .tag-line h1 {
+    font-size: 3.6rem;
+  }
+
+  .tagline-p {
+    width: 100%;
+  }
+
+  /* img container */
+  .show-image {
+    width: 70%;
+    margin: auto;
+  }
+
+  .show-image img {
+    width: 100%;
+  }
+
+  /********** Section 1 **********/
+  .company-pros {
+    padding: 5rem 2%;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .pro-one,
+  .pro-two {
+    flex-direction: column;
+  }
+
+  .pro-one {
+    margin-bottom: 1rem;
+  }
+
+  /* img and content container */
+  .pro-img {
+    width: 60%;
+  }
+
+  .pro-content {
+    width: 100%;
+    order: 2;
+  }
+
+  /********** Section 2 **********/
+  .company-services {
+    padding: 5rem 2%;
+  }
+
+  .service-heading {
+    gap: 1rem;
+  }
+
+  .service-h2 {
+    width: 49%;
+    font-size: 2.4rem;
+  }
+
+  .service-p {
+    width: 49%;
+  }
+
+  /* sercive feature wrapper */
+  .common-feature {
+    width: 48%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /********** Section 3 **********/
+  .company-pricing {
+    padding: 5rem 2%;
+  }
+
+  .pricing-pack-wrapper {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  /* common styling for cards */
+  .pricing-pack-wrapper .common-pack {
+    width: 48%;
+    flex: none;
+  }
+
+  .pricing-pack-wrapper .Popular-pack {
+    order: 2;
+  }
+
+  /********** Section 4 **********/
+  .company-testimonial {
+    padding: 5rem 2%;
+  }
+
+  .testimonial-header {
+    width: 100%;
+  }
+
+  .testimonial-wrapper {
+    gap: 0rem;
+  }
+
+  .common-test {
+    margin-bottom: 1rem;
+  }
+
+  .common-p-test {
+    font-size: 1.4rem;
+  }
+
+  /********** Section 5 **********/
+  .register {
+    padding: 5rem 2%;
+  }
+
+  /* text wrapper */
+  .register-content .text-content {
+    width: 70%;
+  }
+
+  .h2-register {
+    font-size: 2.2rem;
+  }
+
+  .register-p {
+    width: 100%;
+  }
+
+  .btn-register {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1.2rem 2.6rem;
+  }
+
+  /********** Footer **********/
+  .foot {
+    padding: 5rem 2% 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+
+  /* company foot */
+  .common-foot {
+    width: 30%;
+    align-self: normal;
+  }
+
+  /*foot  logo */
+  .company-foot img {
+    width: 8rem;
+  }
+
+  .social img {
+    margin-right: 2rem;
+  }
+}
+
+/********** Media query for tablet and smaller screen laptop**********/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  /***** common style Start *****/
+  /* btn white */
+  .btn-white-style {
+    font-size: 1.3rem;
+    padding: 1.2rem 2.8rem;
+    font-weight: 600;
+  }
+
+  /* btn color */
+  .btn-color-style {
+    font-size: 1.3rem;
+    padding: 1.2rem 2.8rem;
+    font-weight: 600;
+  }
+
+  /* .para-style */
+  .para-style {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  /* h2 style */
+  .h2-style {
+    font-size: 2.8rem;
+  }
+
+  /* h3 style */
+  .h3-style {
+    font-size: 2.6rem;
+  }
+
+  /* h4 style */
+  .h4-style {
+    font-size: 1.8rem;
+  }
+  /***** common style End *****/
+
+  /********** ShowCase **********/
+  .showcase {
+    padding: 0 4%;
+    margin-bottom: 0;
+  }
+
+  /* hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* navmenu */
+  .nav-menu {
+    display: none;
+  }
+
+  /* showcase content */
+  .showcase-content {
+    padding: 6rem 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* tagline */
+  .tag-line {
+    width: 100%;
+    order: 2;
+  }
+
+  .tag-line h1 {
+    font-size: 3.6rem;
+  }
+
+  .tagline-p {
+    width: 100%;
+  }
+
+  /* img container */
+  .show-image {
+    width: 60%;
+    margin: auto;
+  }
+
+  .show-image img {
+    width: 100%;
+  }
+
+  /********** Section 1 **********/
+  .company-pros {
+    padding: 5rem 4%;
+  }
+  /********** Section 2 **********/
+  .company-services {
+    padding: 5rem 4%;
+  }
+  .service-h2 {
+    width: 45%;
+  }
+
+  .common-feature {
+    width: 32%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem 0rem;
+    border-radius: 0.5rem;
+  }
+
+  /********** Section 3 **********/
+
+  .company-pricing {
+    padding: 5rem 4%;
+  }
+
+  .pricing-pack-wrapper {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  /* common styling for cards */
+  .pricing-pack-wrapper .common-pack {
+    width: 48%;
+    flex: none;
+  }
+
+  .pricing-pack-wrapper .Popular-pack {
+    order: 2;
+  }
+
+  /********** Section 4 **********/
+  .company-testimonial {
+    padding: 5rem 2%;
+  }
+
+  .testimonial-header {
+    width: 100%;
+  }
+
+  .testimonial-wrapper {
+    gap: 0rem;
+  }
+
+  .common-test {
+    margin-bottom: 1rem;
+  }
+
+  .common-p-test {
+    font-size: 1.4rem;
+  }
+
+  /********** Section 5 **********/
+  .register {
+    padding: 5rem 4%;
+  }
+
+  /* text wrapper */
+  .register-content .text-content {
+    width: 70%;
+  }
+
+  .h2-register {
+    font-size: 2.2rem;
+  }
+
+  .register-p {
+    width: 100%;
+  }
+
+  .btn-register {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1.2rem 2.6rem;
+  }
+}
