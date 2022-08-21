@@ -1,0 +1,622 @@
+/* Font Family Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/********** Utility **********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+:root {
+  --black: #1a1a1a;
+  --white: #ffffff;
+  --off-white: #fdfeff;
+  --blue: #07a3f4;
+  --dark-gray: #353535;
+  --light-gray: #7a8297;
+
+  --linear-grad: linear-gradient(
+    to right,
+    #08baf7,
+    #00a7f9,
+    #0093f9,
+    #007df4,
+    #0564ea
+  );
+  --linear-grad-hover: linear-gradient(
+    to left,
+    #08baf7,
+    #00a7f9,
+    #0093f9,
+    #007df4,
+    #0564ea
+  );
+
+  --border-top: #08baf7;
+  --border-right: #0564ea;
+  --border-bottom: #0564ea;
+  --border-left: #08baf7;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1600px;
+  margin: auto;
+  padding: 2% 0 0;
+}
+/********** Utility End **********/
+
+/********** Common Style **********/
+
+/* White Background Button */
+.btn-white-style {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1.4rem 3.4rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: var(--linear-grad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-width: 1.2px;
+  border-style: solid;
+  border-color: var(--border-top) var(--border-right) var(--border-bottom)
+    var(--border-left);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-white-style:hover {
+  background: var(--linear-grad-hover);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: var(--border-left) var(--border-top) var(--border-right)
+    var(--border-bottom);
+}
+
+/* Color Background Button */
+.btn-color-style {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1.6rem 3.4rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: var(--linear-grad);
+  color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-color-style:hover {
+  transform: translateY(-0.2rem);
+}
+
+/* p paragraph */
+.para-style {
+  font-size: 1.7rem;
+  color: var(--light-gray);
+  margin-bottom: 3.2rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+/* h2 style */
+.h2-style {
+  color: var(--dark-gray);
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+}
+
+/* h3 style */
+.h3-style {
+  font-size: 3.4rem;
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+}
+
+/* h4 style */
+.h4-style {
+  font-size: 2.8rem;
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+}
+/********** Common Style End**********/
+
+/********** ShowCase **********/
+.showcase {
+  position: relative;
+  padding: 0 7%;
+}
+
+/*** navbar ***/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* navbar logo */
+.navbar .logo {
+  width: 12rem;
+  cursor: pointer;
+}
+
+/* nav-menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+/* nav-link */
+.nav-link {
+  display: inline-block;
+  margin-left: 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--light-gray);
+  transition: all 0.1s ease-in-out;
+}
+
+/* nav-link active */
+.nav-link.active {
+  color: var(--dark-gray);
+  font-weight: 700;
+}
+
+/* nav-link hover */
+.nav-link:hover {
+  color: var(--dark-gray);
+  font-weight: 600;
+}
+
+/* nav-btn styling in common style*/
+.nav-btn {
+  margin-left: 3rem;
+}
+
+/*** showcase content ***/
+.showcase-content {
+  padding: 15rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* tagline */
+.tag-line {
+  width: 50%;
+}
+
+.tag-line h1 {
+  color: var(--black);
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
+.tagline-p {
+  width: 90%;
+}
+
+/* show-image */
+.show-image {
+  width: 40%;
+}
+
+.show-image img {
+  width: 100%;
+}
+
+/* tagline button style in common style */
+
+/********** ShowCase End **********/
+
+/********** Section 1 Company Pros **********/
+.company-pros {
+  padding: 10rem 7%;
+}
+
+/* single box style*/
+.pro-one,
+.pro-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pro-one {
+  margin-bottom: 10rem;
+}
+
+/* common style img */
+.pro-img {
+  width: 45%;
+}
+
+.pro-img img {
+  width: 100%;
+}
+
+/* common style content */
+.pro-content {
+  width: 50%;
+}
+
+/* para */
+.pro1-p {
+  width: 90%;
+}
+
+/* para */
+.pro2-p {
+  width: 95%;
+}
+
+.pro-btn {
+  padding: 1.6rem 4rem;
+}
+/********** Section 1 Company Pros End **********/
+
+/********** Section 2 Company Services **********/
+.company-services {
+  padding: 2% 7%;
+}
+
+/*** service heading ***/
+.service-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+/* service heading para */
+.service-h2 {
+  width: 39%;
+}
+
+.service-p {
+  width: 49%;
+  align-self: center;
+}
+
+/*** service feature ***/
+.service-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* common  box styling */
+.common-feature {
+  width: 28%;
+  margin-bottom: 3rem;
+}
+
+.common-feature img {
+  width: 5rem;
+  margin-bottom: 2rem;
+}
+
+/* h4 style in common style */
+
+.common-feature .feature-p {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+/********** Section 2 Company Services End **********/
+
+/********** Section 3 Company Pricing **********/
+.company-pricing {
+  background: linear-gradient(
+    to right bottom,
+    #08baf7,
+    #00a7f9,
+    #0093f9,
+    #007df4,
+    #0564ea
+  );
+  text-align: center;
+  padding: 4% 7%;
+}
+
+/*Pricing section heading */
+.pricing-h2 {
+  color: var(--white);
+  margin-bottom: 4rem;
+}
+
+/*** Pricing Packs Wrapper***/
+.pricing-pack-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* common styling for pack */
+.pricing-pack-wrapper .common-pack {
+  width: 30%;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+/* pack name */
+.pack-name {
+  text-align: left;
+  padding: 2.2rem;
+  border-radius: 0.5rem;
+}
+
+.pack-name .common-h3 {
+  margin-bottom: 0.5rem;
+}
+
+.pack-name .common-p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* pack name active */
+.pack-name.active {
+  background-color: var(--dark-gray);
+}
+
+.pack-name.active .common-h3,
+.pack-name.active .common-p {
+  color: var(--white);
+}
+
+/* benifits ul*/
+.benifits {
+  padding: 2.2rem;
+  text-align: left;
+}
+
+/* benifits li */
+.benifits li {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+  padding: 1.6rem 0;
+}
+
+/* li last child for MB */
+.benifits li:last-child {
+  margin-bottom: 2rem;
+}
+
+/* benifits check mark */
+.benifits .check {
+  width: 16px;
+  margin-right: 0.8rem;
+  vertical-align: center;
+}
+
+/* pack price */
+.pack-price span {
+  color: var(--light-gray);
+}
+
+/* pack price h3 for MB */
+.pack-price .h3-style {
+  margin-bottom: 0;
+}
+
+/* cancle text */
+.cancel {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* plan button */
+.plan-btn {
+  margin-bottom: 2.6rem;
+}
+
+.plan-btn:hover {
+  transform: translateY(-0.2rem);
+}
+
+/********** Section 3 Company Pricing End **********/
+
+/********** Section 4 Testimonial  **********/
+.company-testimonial {
+  padding: 8% 7% 4%;
+  text-align: center;
+  background-color: var(--off-white);
+}
+
+/*** testimonial header ***/
+.testimonial-header {
+  width: 55%;
+  margin: auto;
+}
+
+/* testi h2 */
+.testimonial-header .h2-style {
+  margin-bottom: 1rem;
+}
+
+/* testi p */
+.testimonial-p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+/* Testimonial Wrapper */
+.testimonial-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* common style */
+.common-test {
+  width: 48%;
+  background-color: var(--white);
+  margin-bottom: 4%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+/* common test para */
+.common-p-test {
+  text-align: left;
+  font-size: 1.6rem;
+  color: var(--dark-gray);
+  margin-bottom: 3rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+
+/*** customer profile ***/
+.customer-profile {
+  display: flex;
+  align-items: center;
+}
+
+/* customer img */
+.customer-pic img {
+  width: 60px;
+  margin-right: 1rem;
+}
+
+/* customer deatils */
+.customer-deatil {
+  text-align: left;
+}
+
+.customer-deatil .name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.customer-deatil .desg {
+  font-size: 1.4rem;
+}
+/********** Section 4 Testimonial End **********/
+
+/********** Section 5 Register **********/
+.register {
+  padding: 4% 7%;
+  background-image: url('../img/footer-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* content wrapper */
+.register-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* text wrapper */
+.register-content .text-content {
+  width: 45%;
+}
+
+.h2-register {
+  color: var(--white);
+}
+
+/* para */
+.register-p {
+  color: var(--white);
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+.btn-register {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1.6rem 3.4rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-register:hover {
+  transform: translateY(-0.2rem);
+}
+
+/********** Section 5 Register End **********/
+
+/********** Footer**********/
+.foot {
+  padding: 7% 7% 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* company foot */
+.company-foot {
+  width: 18%;
+}
+
+.company-foot img {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+.company-foot .foot-p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--light-gray);
+}
+
+/* common styling for Menu/Links/Overview*/
+
+.common-foot .h4-style {
+  margin-bottom: 2rem;
+}
+
+.foot-menu li {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--light-gray);
+}
+
+/* social img */
+.social img {
+  width: 3.5rem;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.social img:hover {
+  transform: translateY(-0.2rem);
+}
+/********** Footer End**********/
